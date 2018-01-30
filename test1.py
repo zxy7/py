@@ -91,16 +91,22 @@
 
 # help(printMax)
 
-import sys
-print dir(sys)
+# import sys
+# print dir(sys)
 # print 'The command line arguments are:'
 # for i in sys.argv:
 #     print i
 
 # print '\n\nThe PYTHONPATH is', sys.path, '\n'
-if __name__ == '__main__':
-    print 'This program is being run by itself'
-else:
-    print 'I am being imported from another module'
+# if __name__ == '__main__':
+#     print 'This program is being run by itself'
+# else:
+#     print 'I am being imported from another module'
 
-print __name__
+# print __name__
+
+# print dir()
+# a=5
+# print dir()
+# del a
+# print dir()
