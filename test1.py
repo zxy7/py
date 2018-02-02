@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# coding:utf-8
+# Filename: test1.py
+
 # print 'hello '
 # i = 5
 # print i
@@ -147,21 +151,38 @@
 # ag
 
 
-print 'Simple Assignment'
-shoplist = ['apple', 'mango', 'carrot', 'banana']
-mylist = shoplist # mylist is just another name pointing to the same object!
+# print 'Simple Assignment'
+# shoplist = ['apple', 'mango', 'carrot', 'banana']
+# mylist = shoplist # mylist is just another name pointing to the same object!引用
 
-del shoplist[0]
+# del shoplist[0]
 
-print 'shoplist is', shoplist
-print 'mylist is', mylist
-# notice that both shoplist and mylist both print the same list without
-# the 'apple' confirming that they point to the same object
+# print 'shoplist is', shoplist
+# print 'mylist is', mylist
+# # notice that both shoplist and mylist both print the same list without
+# # the 'apple' confirming that they point to the same object
 
-print 'Copy by making a full slice'
-mylist = shoplist[:] # make a copy by doing a full slice
-del mylist[0] # remove first item
+# print 'Copy by making a full slice'
+# mylist = shoplist[:] # make a copy by doing a full slice拷贝
+# del mylist[0] # remove first item
 
-print 'shoplist is', shoplist
-print 'mylist is', mylist
-# notice that now the two lists are different
+# print 'shoplist is', shoplist
+# print 'mylist is', mylist
+# # notice that now the two lists are different
+
+
+
+name = 'Swaroop' # This is a string object 
+
+if name.startswith('Swa'):
+    print 'Yes, the string starts with "Swa"'
+
+if 'a' in name:
+    print 'Yes, it contains the string "a"'
+
+if name.find('war') != -1:
+    print 'Yes, it contains the string "war"'
+
+delimiter = '_*_'
+mylist = ['Brazil', 'Russia', 'India', 'China']
+print delimiter.join(mylist)
