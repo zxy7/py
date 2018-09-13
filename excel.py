@@ -16,11 +16,12 @@ def main():
         for rownum in range(1,nrows):
          row = table.row_values(rownum)
          if row:
-           print "{title: '"+row[0]+"',"+" key:'"+row[1].lower()+"',width:100},"
+           print "{secondcolumn: '"+row[1]+"',"+" secondcolumnname:'"+row[0]+"'},"
+          #  print "{title: '"+row[0]+"',"+" key:'"+row[1].lower()+"',width:100},"
           #  print "{title: '"+row[0]+"',"+" key:'"+row[1].lower()+"'},"
-          #  print row[1].lower()+":'',"
-           sheet.write(rownum,0,"{title: '"+row[0]+"',"+" key:'"+row[1].lower()+"',width:100}")
-           sheet.write(rownum,1,row[1].lower()+":'',")
+          #  print row[1].lower()+":0,"
+          #  sheet.write(rownum,0,"{title: '"+row[0]+"',"+" key:'"+row[1].lower()+"',width:100}")
+          #  sheet.write(rownum,1,row[1].lower()+":'',")
         filename.save("b.xls")  
     except Exception,e:  
         print(str(e)) 
